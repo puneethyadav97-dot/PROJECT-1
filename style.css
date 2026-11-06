@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8ef;
+    color: #333;
+}
+
+header {
+    background: #07df28;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+section {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #6b2d1a;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.hero {
+    padding: 0;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.hero-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background: #e67e22;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #c95f08;
+}
+
+.offers {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.offers div {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background: #fff1d6;
+    border-left: 5px solid #e67e22;
+    border-radius: 8px;
+}
+
+.note {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-align: center;
+    background: #fffaf5;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h3 {
+    color: #6b2d1a;
+}
+
+.card strong {
+    color: #e67e22;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #6b2d1a;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #fff5e8;
+}
+
+.total {
+    background: #ffe0a6;
+    color: #6b2d1a;
+    font-size: 18px;
+}
+
+.thank-you {
+    text-align: center;
+    font-weight: bold;
+    color: #6b2d1a;
+    margin-top: 25px;
+}
+
+form {
+    max-width: 650px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 25px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    background: #6b2d1a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #8b3d22;
+}
+
+button.clear {
+    background: #777;
+    margin-left: 10px;
+}
+
+#message {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#contact a {
+    color: #0993e3;
+    font-weight: bold;
+}
+
+footer {
+    background: #db7b5e;
+    color: rgb(204, 166, 166);
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .offers {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
